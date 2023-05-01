@@ -16,7 +16,9 @@ class ViewController: UIViewController {
     }()
     
     override func viewDidLayoutSubviews() {
-        addGradientOnView()
+        if viewWthGraient.layer.sublayers == nil {
+            addGradientOnView()
+        }
     }
     
     override func viewDidLoad() {
